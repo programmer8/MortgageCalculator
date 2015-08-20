@@ -1,0 +1,76 @@
+---
+title       : Another Mortgage Calculator?
+subtitle    : 
+author      : by Programmer8
+job         : 
+framework   : io2012          # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js    # {highlight.js, prettify, highlight}
+hitheme     : tomorrow        # 
+widgets     : [mathjax, quiz] # {mathjax, quiz, bootstrap}
+mode        : standalone      # {standalone, selfcontained, draft}
+knit        : slidify::knit2slides
+---
+
+</br>
+
+## Why do we need another Mortgage Calculator?
+
+</br>
+
+1. You never know when websites containing other mortgage calculators will go away.
+2. You want to verify that the other calculators give the right answers.
+3. You need a simple task to expore the Shiny Web Application Framework.
+4. You want to get a decent grade in your **Developing Data Products** class.
+
+
+---
+
+</br>
+
+## Where is this great Mortgage Calculator?
+
+</br>
+
+This newer, better calculator runs on a Shiny server and can be found at  
+[https://programmer8.shinyapps.io/MortgageCalculator](https://programmer8.shinyapps.io/MortgageCalculator)
+
+</br>
+
+For those interested in the source code, it can be found at  
+[https://github.com/programmer8/MortgageCalculator](https://github.com/programmer8/MortgageCalculator)
+
+---
+
+</br>
+
+## What formula does this calculator utilize?
+
+</br>
+
+$$principle * \frac{i(1 + i)^n}{(1 + i)^n - 1}$$
+
+where:
+
+- principle = the initial loan amount
+- i = annual interest rate / 12
+- n = number of months
+
+Note: when i == 0, the formula utilized is $\frac{principle}{n}$
+
+---
+
+</br>
+
+## Does this slidify deck contain any R code?
+
+</br>
+
+It sure does.  This slide deck was last compiled on **`r format(Sys.Date(), "%a. %b %d, %Y")`** 
+(inline code). And here is a silly code block:
+
+``` {r, fig.height = 4}
+x = seq(-4, 4, by = .05)
+y = dnorm(x)
+plot(x, y, type = "l", col = "red", main = "A Standard Normal Bell Curve")
+```
+

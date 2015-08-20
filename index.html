@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Another Mortgage Calculator?</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Another Mortgage Calculator?">
+  <meta name="author" content="by Programmer8">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/slides" 
+    src="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Another Mortgage Calculator?</h1>
+    <h2></h2>
+    <p>by Programmer8<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <p></br></p>
+
+<h2>Why do we need another Mortgage Calculator?</h2>
+
+<p></br></p>
+
+<ol>
+<li>You never know when websites containing other mortgage calculators will go away.</li>
+<li>You want to verify that the other calculators give the right answers.</li>
+<li>You need a simple task to expore the Shiny Web Application Framework.</li>
+<li>You want to get a decent grade in your <strong>Developing Data Products</strong> class.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <article data-timings="">
+    <p></br></p>
+
+<h2>Where is this great Mortgage Calculator?</h2>
+
+<p></br></p>
+
+<p>This newer, better calculator runs on a Shiny server and can be found at<br>
+<a href="https://programmer8.shinyapps.io/MortgageCalculator">https://programmer8.shinyapps.io/MortgageCalculator</a></p>
+
+<p></br></p>
+
+<p>For those interested in the source code, it can be found at<br>
+<a href="https://github.com/programmer8/MortgageCalculator">https://github.com/programmer8/MortgageCalculator</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <article data-timings="">
+    <p></br></p>
+
+<h2>What formula does this calculator utilize?</h2>
+
+<p></br></p>
+
+<p>\[principle * \frac{i(1 + i)^n}{(1 + i)^n - 1}\]</p>
+
+<p>where:</p>
+
+<ul>
+<li>principle = the initial loan amount</li>
+<li>i = annual interest rate / 12</li>
+<li>n = number of months</li>
+</ul>
+
+<p>Note: when i == 0, the formula utilized is \(\frac{principle}{n}\)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <article data-timings="">
+    <p></br></p>
+
+<h2>Does this slidify deck contain any R code?</h2>
+
+<p></br></p>
+
+<p>It sure does.  This slide deck was last compiled on <strong>Wed. Aug 19, 2015</strong> 
+(inline code). And here is a silly code block:</p>
+
+<pre><code class="r">x = seq(-4, 4, by = .05)
+y = dnorm(x)
+plot(x, y, type = &quot;l&quot;, col = &quot;red&quot;, main = &quot;A Standard Normal Bell Curve&quot;)
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='NA'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='NA'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/js/quiz-app.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
